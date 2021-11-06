@@ -1,0 +1,1 @@
+<a class="mx-3 py-4 cursor-pointer" wire:click="logout">Logout</a><?php /**PATH G:\Amirthesh\Documents\Projects\Laravel\Circle\patient-blood-management-app\resources\views/livewire/logout.blade.php ENDPATH**/ ?>

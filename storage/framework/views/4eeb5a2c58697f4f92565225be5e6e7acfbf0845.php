@@ -1,0 +1,1 @@
+<div> Hello </div><?php /**PATH G:\Amirthesh\Documents\Projects\Laravel\Circle\patient-blood-management-app\resources\views/welcome.blade.php ENDPATH**/ ?>
