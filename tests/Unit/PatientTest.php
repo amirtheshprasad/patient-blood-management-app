@@ -25,8 +25,8 @@ class PatientTest extends TestCase
     }
     public function test_get_home(){
      
-        $response = $this->get('/home');
-        $response -> assertStatus(302);
+        $response = $this->get('/');
+        $response -> assertStatus(200);
     }
     public function test_get_dashboard(){
      
