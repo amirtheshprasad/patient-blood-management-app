@@ -18,7 +18,7 @@ class Dashboard extends Component
         $data = Patient::join('bloodpressure', 'bloodpressure.patient_id', '=', 'patient.id')
         ->get(['patient.id', 'patient.name', 'patient.date_of_birth', 'bloodpressure.sbp', 'bloodpressure.dbp']);
 
-        dd($this->data);
+        // dd($this->data);
         // ->get(['patient.id', 'patient.name', 'patient.date_of_birth', 'bloodpressure.sbp', 'bloodpressure.dbp']));
         // return view('livewire.dashboard')->with(compact(Patient::join('bloodpressure', 'bloodpressure.patient_id', '=', 'patient.id')
         // ->get(['patient.id', 'patient.name', 'patient.date_of_birth', 'bloodpressure.sbp', 'bloodpressure.dbp'])));
@@ -26,6 +26,6 @@ class Dashboard extends Component
         //     'data' => Patient::join('bloodpressure', 'bloodpressure.patient_id', '=', 'patient.id')
         //     ->get(['patient.id', 'patient.name', 'patient.date_of_birth', 'bloodpressure.sbp', 'bloodpressure.dbp']),
         // ]);
-        return view('livewire.dashboard');
+        return view('livewire.admin.patient.patient-table');
     }
 }
