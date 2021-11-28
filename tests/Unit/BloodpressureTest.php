@@ -12,6 +12,7 @@ class BloodpressureTest extends TestCase
      * @return void
      */
     public function test_get_recordbp(){
+        
         $response = $this->get('/recordbp');
         $response -> assertStatus(302);
     }
