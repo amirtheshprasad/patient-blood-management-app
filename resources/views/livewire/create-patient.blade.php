@@ -13,14 +13,14 @@
             <div class="flex justify-around my-8">
                 <div class="flex flex-wrap w-10/12">
                     <input type="name" class="p-2 rounded border shadow-sm w-full" wire:model="form.name"
-                        placeholder="Patient Name" />
+                        placeholder="Patient Name" name="name" />
                     @error('form.name') <span class="text-red-500 text-xs">{{ $message }}</span> @enderror
                 </div>
             </div>
             <div class="flex justify-around my-8">
                 <div class="flex flex-wrap w-10/12">
                     <input type="email" class="p-2 rounded border shadow-sm w-full" placeholder="Patient Email"
-                        wire:model="form.email" />
+                        wire:model="form.email" name="email" />
                     @error('form.email') <span class="text-red-500 text-xs">{{ $message }}</span> @enderror
                 </div>
             </div>
@@ -29,7 +29,7 @@
                
                 <div class="flex flex-wrap w-10/12 ">
                 <label for="dob">Date of birth</label>
-                    <input type="date" class="p-2 rounded border shadow-sm w-full" wire:model="form.date_of_birth"/> 
+                    <input type="date" class="p-2 rounded border shadow-sm w-full" wire:model="form.date_of_birth" name="dob"/> 
                     @error('form.date_of_birth') <span class="text-red-500 text-xs">{{ $message }}</span> @enderror
                 </div>
                 
@@ -37,14 +37,14 @@
             <div class="flex justify-around my-8">
                 <div class="flex flex-wrap w-10/12">
                     <textarea class="p-2 rounded border shadow-sm w-full" placeholder="Additional Details"
-                        wire:model="form.patient_details" ></textarea>
+                        wire:model="form.patient_details" name="details" ></textarea>
                     @error('form.patient_details') <span class="text-red-500 text-xs">{{ $message }}</span> @enderror
                 </div>
             </div>
             <div class="flex justify-around my-8">
                 <div class="flex flex-wrap w-10/12">
                     <input type="submit" value="Submit"
-                        class="p-2 bg-gray-800 text-white w-full rounded tracking-wider cursor-pointer" />
+                        class="p-2 bg-gray-800 text-white w-full rounded tracking-wider cursor-pointer" dusk="createpatient-button"/>
                 </div>
             </div>
         </form>

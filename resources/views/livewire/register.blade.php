@@ -6,34 +6,34 @@
             <div class="flex justify-around my-8">
                 <div class="flex flex-wrap w-10/12">
                     <input type="name" class="p-2 rounded border shadow-sm w-full" wire:model="form.name"
-                        placeholder="Name" />
+                        placeholder="Name" name="name" />
                     @error('form.name') <span class="text-red-500 text-xs">{{ $message }}</span> @enderror
                 </div>
             </div>
             <div class="flex justify-around my-8">
                 <div class="flex flex-wrap w-10/12">
                     <input type="email" class="p-2 rounded border shadow-sm w-full" placeholder="Email"
-                        wire:model="form.email" />
+                        wire:model="form.email" name="email" />
                     @error('form.email') <span class="text-red-500 text-xs">{{ $message }}</span> @enderror
                 </div>
             </div>
             <div class="flex justify-around my-8">
                 <div class="flex flex-wrap w-10/12">
                     <input type="password" class="p-2 rounded border shadow-sm w-full" placeholder="Password"
-                        wire:model="form.password" />
+                        wire:model="form.password" name="password"/>
                     @error('form.password') <span class="text-red-500 text-xs">{{ $message }}</span> @enderror
                 </div>
             </div>
             <div class="flex justify-around my-8">
                 <div class="flex flex-wrap w-10/12">
                     <input type="password" class="p-2 rounded border shadow-sm w-full" placeholder="Confirm Password"
-                        wire:model="form.password_confirmation" />
+                        wire:model="form.password_confirmation" name="passwordc" />
                 </div>
             </div>
             <div class="flex justify-around my-8">
                 <div class="flex flex-wrap w-10/12">
                     <input type="submit" value="Register"
-                        class="p-2 bg-gray-800 text-white w-full rounded tracking-wider cursor-pointer" />
+                        class="p-2 bg-gray-800 text-white w-full rounded tracking-wider cursor-pointer" dusk="register-button" />
                 </div>
             </div>
         </form>

@@ -13,21 +13,21 @@
             <div class="flex justify-around my-8">
                 <div class="flex flex-wrap w-10/12">
                     <input type="number" class="p-2 rounded border shadow-sm w-full" wire:model="form.patient_id"
-                        placeholder="Patient ID" />
+                        placeholder="Patient ID"  name="patientid" />
                     @error('form.patient_id') <span class="text-red-500 text-xs">{{ $message }}</span> @enderror
                 </div>
             </div>
             <div class="flex justify-around my-8">
                 <div class="flex flex-wrap w-10/12">
                     <input type="number" class="p-2 rounded border shadow-sm w-full" wire:model="form.sbp"
-                        placeholder="Systolic Blood Pressure (SBP)" />
+                        placeholder="Systolic Blood Pressure (SBP)" name="sbp"/>
                     @error('form.sbp') <span class="text-red-500 text-xs">{{ $message }}</span> @enderror
                 </div>
             </div>
             <div class="flex justify-around my-8">
                 <div class="flex flex-wrap w-10/12">
                     <input type="number" class="p-2 rounded border shadow-sm w-full" wire:model="form.dbp"
-                        placeholder="Diastolic blood pressure (DBP)" />
+                        placeholder="Diastolic blood pressure (DBP)" name="dbp" />
                     @error('form.dbp') <span class="text-red-500 text-xs">{{ $message }}</span> @enderror
                 </div>
             </div>
@@ -35,7 +35,7 @@
             <div class="flex justify-around my-8">
                 <div class="flex flex-wrap w-10/12">
                     <input type="submit" value="Submit"
-                        class="p-2 bg-gray-800 text-white w-full rounded tracking-wider cursor-pointer" />
+                        class="p-2 bg-gray-800 text-white w-full rounded tracking-wider cursor-pointer" dusk="recordbp-button" />
                 </div>
             </div>
         </form>

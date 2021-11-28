@@ -5,7 +5,7 @@
         
             <div class="flex justify-around my-8">
                 <div class="flex flex-wrap w-10/12">
-                    <button wire:click="download" class="p-2 bg-gray-800 text-white w-full rounded tracking-wider cursor-pointer" >Download</button>
+                    <button wire:click="download" class="p-2 bg-gray-800 text-white w-full rounded tracking-wider cursor-pointer"  dusk="csv-button">Download</button>
                     
                 </div>
             </div>

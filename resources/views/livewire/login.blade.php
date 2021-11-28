@@ -6,21 +6,21 @@
         <form class="my-4" wire:submit.prevent="submit">
             <div class="flex justify-around my-8">
                 <div class="flex flex-wrap w-10/12">
-                    <input type="email" class="p-2 rounded border shadow-sm w-full" placeholder="Email"
+                    <input type="email" name="email" class="p-2 rounded border shadow-sm w-full" placeholder="Email"
                         wire:model="form.email" />
                     @error('form.email') <span class="text-red-500 text-xs">{{ $message }}</span> @enderror
                 </div>
             </div>
             <div class="flex justify-around my-8">
                 <div class="flex flex-wrap w-10/12">
-                    <input type="password" class="p-2 rounded border shadow-sm w-full" placeholder="Password"
+                    <input type="password" name="password" class="p-2 rounded border shadow-sm w-full" placeholder="Password"
                         wire:model="form.password" />
                     @error('form.password') <span class="text-red-500 text-xs">{{ $message }}</span> @enderror
                 </div>
             </div>
             <div class="flex justify-around my-8">
                 <div class="flex flex-wrap w-10/12">
-                    <input type="submit" value="Login"
+                    <input type="submit" value="Login" dusk="login-button"
                         class="p-2 bg-gray-800 text-white w-full rounded tracking-wider cursor-pointer" />
                 </div>
             </div>
