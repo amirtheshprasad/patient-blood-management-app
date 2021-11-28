@@ -27,8 +27,9 @@ Route::group(['middleware'=>'auth'], function () {
     Route::get('/createpatient', \App\Http\Livewire\CreatePatient::class)->name('patient');
     Route::get('/recordbp', \App\Http\Livewire\RecordBloodPressure::class)->name('bp');
     Route::get('/getpatientcsv', \App\Http\Livewire\GetPatientCsv::class)->name('csv');
-    Route::get('/home', \App\Http\Livewire\GetPatientCsv::class)->name('home');
-    // Route::get('/dashboard', \App\Http\Livewire\Dashboard::class)->name('dashboard');
+  
+
+    // Route::get('/dashboard', \App\Http\Livewire\Admin\Patient\PatientTable::class)->name('dashboard');
     Route::get('/logout', '\App\Http\Controllers\JointableController@logout')->name('logout');
     Route::get('/db', '\App\Http\Controllers\JointableController@index')->name('dashboard');
   
@@ -39,7 +40,7 @@ Route::group(['middleware'=>'auth'], function () {
 Route::group(['middleware'=>'guest'], function () {
     Route::get('/login', \App\Http\Livewire\Login::class)->name('login');
     Route::get('/register', \App\Http\Livewire\Register::class)->name('register');
-    Route::get('/', \App\Http\Livewire\Login::class);
+    Route::get('/', \App\Http\Livewire\Home::class);
 });
 
 
