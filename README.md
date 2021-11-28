@@ -46,6 +46,22 @@ Please use the following command to run the test.
 php artisan test
 
 ``` 
+Please use the following commands to run the dusk tests. You need to open two terminals and first execute the following command in the first terminal.
+
+```
+
+php artisan serv
+
+``` 
+Please execute the following command in the second terminal
+
+```
+
+php artisan dusk
+
+``` 
+
+
 
 
 
